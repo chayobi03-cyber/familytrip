@@ -37,9 +37,9 @@
 
 ### Phase 2 — GitHub 저장소 이름
 - [x] 사용자가 저장소 이름 변경 완료를 보고함
-- [ ] GitHub 연결에서 canonical 저장소 이름과 URL을 재확인 (사용자 완료 보고와 연결 메타데이터가 불일치)
+- [x] GitHub 메타데이터에서 `chayobi03-cyber/familytrip` 및 새 clone URL 확인
 
-사용자는 이름 변경을 완료했다고 보고했으나, 현재 연결된 GitHub 도구는 여전히 `jeonju-family-trip`을 반환하고 `familytrip` 주소를 조회하지 못합니다. 연결 메타데이터 동기화 이후 canonical URL을 재확인해야 합니다.
+현재 canonical 저장소 주소는 [`chayobi03-cyber/familytrip`](https://github.com/chayobi03-cyber/familytrip)입니다.
 
 ### Phase 3 — 전주 앱 이동 및 배포 경로
 - [x] 앱의 HTML/CSS/JS와 테스트를 `trips/jeonju/app/` 아래로 이동
@@ -47,8 +47,7 @@
 - [x] Pages artifact 경로를 `trips/jeonju/app`으로 변경
 - [x] 문서의 앱/테스트 경로 갱신
 - [x] GitHub Actions의 `test` job 통과 확인
-- [ ] GitHub Pages 배포 최종 확인 (현재 `configure-pages`가 `Resource not accessible by integration`으로 실패)
-- [ ] GitHub Actions의 `configure-pages`가 여전히 Pages site GET에서 404를 반환함 — Settings → Pages에서 Source를 GitHub Actions로 설정·저장하고 다시 실행
+- [ ] GitHub Pages 배포 최종 확인 — 현재 `configure-pages`가 Pages site GET에서 404를 반환합니다. Settings → Pages에서 Source를 GitHub Actions로 설정·저장한 뒤 다시 실행합니다. 자동 활성화 권한은 연결된 GitHub Actions 토큰에 없어 워크플로에서 사이트를 생성하지 못합니다.
 - [ ] 브라우저에서 실제 Pages 배포 URL 인수 테스트
 
 ## 5. 테스트
