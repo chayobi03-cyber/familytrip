@@ -8,7 +8,7 @@
 
 1. 저장소 루트의 `.github/workflows/pages.yml`이 테스트 실행 경로 `trips/jeonju/app` 및 artifact 경로 `trips/jeonju/app`을 사용하는지 확인합니다.
 2. GitHub 저장소의 **Settings → Pages**를 엽니다.
-3. Build and deployment의 Source를 **GitHub Actions**로 선택합니다.
+3. Build and deployment의 Source를 **GitHub Actions**로 선택합니다. 현재 연동 토큰은 Pages 사이트 생성 권한이 없어 자동 활성화가 실패했으므로 이 설정은 저장소 관리자 화면에서 직접 완료해야 합니다.
 4. `main`에 푸시하거나 Actions에서 워크플로를 수동 실행합니다.
 5. 테스트 및 배포 job이 모두 성공하는지 확인합니다.
 6. GitHub가 표시한 Pages URL을 열고 아래 점검을 수행합니다.

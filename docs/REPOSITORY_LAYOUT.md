@@ -37,17 +37,18 @@
 
 ### Phase 2 — GitHub 저장소 이름
 - [x] 사용자가 저장소 이름 변경 완료를 보고함
-- [ ] GitHub 연결에서 canonical 저장소 이름과 URL을 재확인
+- [ ] GitHub 연결에서 canonical 저장소 이름과 URL을 재확인 (사용자 완료 보고와 연결 메타데이터가 불일치)
 
-현재 연결된 GitHub 도구는 여전히 이전 저장소 이름을 반환하므로, 연결 메타데이터 동기화 이후 canonical URL을 재확인해야 합니다.
+사용자는 이름 변경을 완료했다고 보고했으나, 현재 연결된 GitHub 도구는 여전히 `jeonju-family-trip`을 반환하고 `familytrip` 주소를 조회하지 못합니다. 연결 메타데이터 동기화 이후 canonical URL을 재확인해야 합니다.
 
 ### Phase 3 — 전주 앱 이동 및 배포 경로
 - [x] 앱의 HTML/CSS/JS와 테스트를 `trips/jeonju/app/` 아래로 이동
 - [x] workflow 테스트 작업 디렉터리를 이동한 앱 경로로 변경
 - [x] Pages artifact 경로를 `trips/jeonju/app`으로 변경
 - [x] 문서의 앱/테스트 경로 갱신
-- [ ] GitHub Actions 테스트 및 Pages 배포 최종 상태 확인
-- [ ] 브라우저에서 실제 Pages 배포 URL 인수 테스트
+- [x] GitHub Actions의 `test` job 통과 확인
+- [ ] GitHub Pages 배포 최종 확인 (현재 `configure-pages`가 `Resource not accessible by integration`으로 실패)
+- [ ] 저장소 Settings → Pages에서 Source를 GitHub Actions로 직접 설정한 뒤 브라우저에서 실제 Pages 배포 URL 인수 테스트
 
 ## 5. 테스트
 
