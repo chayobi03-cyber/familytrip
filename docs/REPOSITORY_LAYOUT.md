@@ -48,7 +48,8 @@
 - [x] 문서의 앱/테스트 경로 갱신
 - [x] GitHub Actions의 `test` job 통과 확인
 - [ ] GitHub Pages 배포 최종 확인 (현재 `configure-pages`가 `Resource not accessible by integration`으로 실패)
-- [ ] 저장소 Settings → Pages에서 Source를 GitHub Actions로 직접 설정한 뒤 브라우저에서 실제 Pages 배포 URL 인수 테스트
+- [ ] GitHub Actions의 `configure-pages`가 여전히 Pages site GET에서 404를 반환함 — Settings → Pages에서 Source를 GitHub Actions로 설정·저장하고 다시 실행
+- [ ] 브라우저에서 실제 Pages 배포 URL 인수 테스트
 
 ## 5. 테스트
 
