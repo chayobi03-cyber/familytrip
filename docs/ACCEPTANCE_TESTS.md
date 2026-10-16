@@ -39,9 +39,13 @@
 | AT-19 | 좁은 모바일 화면에서 주요 흐름을 이용한다. | 핵심 조작을 가로 스크롤 없이 수행할 수 있다. | 미실행 |
 | AT-20 | 저장 용량이 부족하거나 브라우저 저장이 비활성화된다. | 저장 실패를 성공으로 표시하지 않는다. | 미실행 |
 
+## 자동 회귀 테스트
+
+저장소 루트에서 `cd trips/jeonju/app && node tests/engine.test.js`로 일정 엔진 테스트를 실행합니다. Playwright 스모크 테스트는 같은 디렉터리에서 기존 실행 환경 변수(`PW_MODULE`, `CHROME`)를 지정해 실행합니다.
+
 ## 실행 절차
 
-1. 최신 `index.html`을 Chrome Android와 데스크톱 Chrome에서 연다.
+1. `trips/jeonju/app/index.html`을 로컬 서버 또는 GitHub Pages에서 열고 Chrome Android와 데스크톱 Chrome에서 확인한다.
 2. 새 브라우저 프로필에서 핵심 흐름을 검사한다.
 3. 사용자 장소 1개를 생성하고 사진 2장을 추가한다.
 4. 일정 변경 후 새로고침하고, 사진·일정 복원을 확인한다.
